@@ -1,6 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<name>MagicDesktopCompanion</name>
 	<description>Cards manager for magic the gathering</description>
@@ -26,10 +24,10 @@
 		</developer>
 	</developers>
 	<licenses>
-	    <license>
-	      <name>Apache License, Version 2.0</name>
-	      <url>http://www.apache.org/licenses/LICENSE-2.0</url>
-	    </license>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0</url>
+		</license>
 	</licenses>
 	<scm>
 		<connection>scm:git:https://github.com/nicho92/MtgDesktopCompanion.git</connection>
@@ -42,8 +40,8 @@
 		<url>https://travis-ci.org/nicho92/MtgDesktopCompanion</url>
 	</ciManagement>
 	<properties>
-		<maven.compiler.source>15</maven.compiler.source>
-		<maven.compiler.target>15</maven.compiler.target>
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>11</maven.compiler.target>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
@@ -62,75 +60,75 @@
 		</repository>
 	</repositories>
 	<dependencies>
-	<dependency>
-    <groupId>it.marplex.cloudflarebypass</groupId>
-    <artifactId>cloudflare-bypass</artifactId>
-    <version>1.0</version>
-</dependency>
-	<dependency>
-    	<groupId>net.jakubec</groupId>
-    	<artifactId>JSnapableDesktopPane</artifactId>
-    	<version>0.1</version>
-	</dependency>
-	  	<dependency>
-		  <groupId>com.formdev</groupId>
-		  <artifactId>jide-oss</artifactId>
-		  <version>3.7.12</version>
+		<dependency>
+			<groupId>it.marplex.cloudflarebypass</groupId>
+			<artifactId>cloudflare-bypass</artifactId>
+			<version>1.0</version>
 		</dependency>
 		<dependency>
-		    <groupId>com.oracle.database.jdbc</groupId>
-		    <artifactId>ojdbc10</artifactId>
-		    <version>19.11.0.0</version>
+			<groupId>net.jakubec</groupId>
+			<artifactId>JSnapableDesktopPane</artifactId>
+			<version>0.1</version>
 		</dependency>
 		<dependency>
-		    <groupId>org.jfree</groupId>
-		    <artifactId>org.jfree.chart3d</artifactId>
-		    <version>2.0</version>
+			<groupId>com.formdev</groupId>
+			<artifactId>jide-oss</artifactId>
+			<version>3.7.12</version>
 		</dependency>
 		<dependency>
-		    <groupId>org.cache2k</groupId>
-		    <artifactId>cache2k-api</artifactId>
-		    <version>2.1.3.Alpha</version>
+			<groupId>com.oracle.database.jdbc</groupId>
+			<artifactId>ojdbc10</artifactId>
+			<version>19.11.0.0</version>
 		</dependency>
 		<dependency>
-		    <groupId>org.cache2k</groupId>
-		    <artifactId>cache2k-core</artifactId>
-		    <version>2.1.3.Alpha</version>
+			<groupId>org.jfree</groupId>
+			<artifactId>org.jfree.chart3d</artifactId>
+			<version>2.0</version>
 		</dependency>
 		<dependency>
-		  <groupId>org.iban4j</groupId>
-		  <artifactId>iban4j</artifactId>
-		  <version>3.2.3-RELEASE</version>
+			<groupId>org.cache2k</groupId>
+			<artifactId>cache2k-api</artifactId>
+			<version>2.1.3.Alpha</version>
 		</dependency>
 		<dependency>
-		    <groupId>com.formdev</groupId>
-		    <artifactId>flatlaf</artifactId>
-		    <version>1.4</version>
+			<groupId>org.cache2k</groupId>
+			<artifactId>cache2k-core</artifactId>
+			<version>2.1.3.Alpha</version>
 		</dependency>
 		<dependency>
-		  <groupId>com.formdev</groupId>
-		  <artifactId>flatlaf-intellij-themes</artifactId>
-		  <version>1.4</version>
+			<groupId>org.iban4j</groupId>
+			<artifactId>iban4j</artifactId>
+			<version>3.2.3-RELEASE</version>
 		</dependency>
 		<dependency>
-		    <groupId>com.h2database</groupId>
-		    <artifactId>h2</artifactId>
-		    <version>1.4.200</version>
+			<groupId>com.formdev</groupId>
+			<artifactId>flatlaf</artifactId>
+			<version>1.4</version>
 		</dependency>
 		<dependency>
-		  <groupId>com.github.nicho92</groupId>
-		  <artifactId>mtgstock-api-java</artifactId>
-		  <version>0.1.19</version>
+			<groupId>com.formdev</groupId>
+			<artifactId>flatlaf-intellij-themes</artifactId>
+			<version>1.4</version>
 		</dependency>
 		<dependency>
-		  <groupId>com.github.nicho92</groupId>
-		  <artifactId>mkm-api-java</artifactId>
-		  <version>0.11.14</version>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>1.4.200</version>
 		</dependency>
 		<dependency>
-		    <groupId>org.javatuples</groupId>
-		    <artifactId>javatuples</artifactId>
-		    <version>1.2</version>
+			<groupId>com.github.nicho92</groupId>
+			<artifactId>mtgstock-api-java</artifactId>
+			<version>0.1.20</version>
+		</dependency>
+		<dependency>
+			<groupId>com.github.nicho92</groupId>
+			<artifactId>mkm-api-java</artifactId>
+			<version>0.11.15</version>
+		</dependency>
+		<dependency>
+			<groupId>org.javatuples</groupId>
+			<artifactId>javatuples</artifactId>
+			<version>1.2</version>
 		</dependency>
 		<dependency>
 			<groupId>org.jooq</groupId>
@@ -223,9 +221,9 @@
 			<version>1.1.0</version>
 		</dependency>
 		<dependency>
-		    <groupId>org.rednoise</groupId>
-		    <artifactId>rita</artifactId>
-		    <version>2.4.103</version>
+			<groupId>org.rednoise</groupId>
+			<artifactId>rita</artifactId>
+			<version>2.4.103</version>
 		</dependency>
 		<dependency>
 			<groupId>org.pushing-pixels</groupId>
@@ -287,7 +285,7 @@
 			<groupId>com.sparkjava</groupId>
 			<artifactId>spark-core</artifactId>
 			<version>2.9.3</version>
-			
+
 		</dependency>
 		<dependency>
 			<groupId>de.vandermeer</groupId>
@@ -447,10 +445,10 @@
 			<version>4.4.14</version>
 		</dependency>
 		<dependency>
-		    <groupId>com.itextpdf</groupId>
-		    <artifactId>itext7-core</artifactId>
-		    <version>7.1.16</version>
-		    <type>pom</type>
+			<groupId>com.itextpdf</groupId>
+			<artifactId>itext7-core</artifactId>
+			<version>7.1.16</version>
+			<type>pom</type>
 		</dependency>
 		<dependency>
 			<groupId>org.japura</groupId>
@@ -559,7 +557,7 @@
 			<artifactId>jython-standalone</artifactId>
 			<version>2.7.2</version>
 		</dependency>
-		
+
 	</dependencies>
 
 	<build>

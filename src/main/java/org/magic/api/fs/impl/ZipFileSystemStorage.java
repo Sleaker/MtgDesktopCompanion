@@ -18,7 +18,7 @@ public class ZipFileSystemStorage extends AbstractFileStorage {
 	public void initFileSystem() throws IOException {
 		Map<String, Object> env = new HashMap<>();
 		  env.put("create", "true");
-		fs = FileSystems.newFileSystem(getFile("ROOT").toPath(),env);
+		fs = FileSystems.newFileSystem(getFile("ROOT").toPath().toUri(),env);
 	}
 
 	@Override

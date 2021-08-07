@@ -101,19 +101,24 @@ public class LotusNoirDecks extends AbstractDeckSniffer {
 					String land = element.text().split(" ")[1];
 					switch (land) 
 					{
-						case "Plain","Plains":
+						case "Plain":
+						case "Plains":
 							deckColor.append("{W}");
 							break;
-						case "Island","Islands":
+						case "Island":
+						case "Islands":
 							deckColor.append("{U}");
 							break;
-						case "Swamp","Swamps":
+						case "Swamp":
+						case "Swamps":
 							deckColor.append("{B}");
 							break;
-						case "Mountain","Mountains":
+						case "Mountain":
+						case "Mountains":
 							deckColor.append("{R}");
 							break;
-						case "Forest","Forests":
+						case "Forest":
+						case "Forests":
 							deckColor.append("{G}");
 							break;
 						default:

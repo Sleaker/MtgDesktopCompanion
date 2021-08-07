@@ -50,21 +50,21 @@ public class MTGConstants {
 	public static final String MTG_APP_NAME = "MTG Companion";
 	public static final String MESSAGE_BUNDLE = "locales.lang";
 	public static final Font DEFAULT_FONT=new Font("Arial Unicode MS", Font.PLAIN, 12);
-	public static final String DEFAULT_SHIPPING_RULES="""
-			var shippingCost=0;
+	public static final String DEFAULT_SHIPPING_RULES="\n" +
+"			var shippingCost=0;\n\n" +
+
+"			if(total >=65){\n" +
+"			  shippingCost=0;\n" +
+"			}\n" +
+"			else if(total >=25)\n" +
+"			{\n" + 
+"			   shippingCost = 15;\n" +
+"			}else if(total>=1)\n" +
+"			{\n" +
+"			shippingCost = 6.50;\n" +
+"			}\n\n"+
 			
-			if(total >=65){
-			  shippingCost=0;
-			}
-			else if(total >=25)
-			{ 
-			   shippingCost = 15;
-			}else if(total>=1)
-			{ 
-			shippingCost = 6.50;
-			}
-			
-			shippingCost;""";
+"			shippingCost;\n";
 
 	public static final String MTG_DESKTOP_ISSUES_URL = "https://github.com/nicho92/MtgDesktopCompanion/issues";
 	public static final String MTG_DESKTOP_WIKI_URL = "https://github.com/nicho92/MtgDesktopCompanion/wiki";
