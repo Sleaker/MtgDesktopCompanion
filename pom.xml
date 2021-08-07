@@ -631,6 +631,21 @@
 				</executions>
 			</plugin>
 			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>3.0.0</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>java</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<mainClass>org.magic.api.main.MtgDesktopCompanion</mainClass>
+				</configuration>
+			</plugin>
+			<plugin>
 				<artifactId>maven-resources-plugin</artifactId>
 				<version>3.0.2</version>
 				<executions>
